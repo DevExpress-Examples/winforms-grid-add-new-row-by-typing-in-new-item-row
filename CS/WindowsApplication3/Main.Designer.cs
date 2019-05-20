@@ -25,8 +25,6 @@ namespace DXSample {
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.customerInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet11 = new DXSample.DataSet1();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.gridControl = new DevExpress.XtraGrid.GridControl();
             this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colCustomerID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -35,7 +33,6 @@ namespace DXSample {
             this.colDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCheck = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.customerInfoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             this.SuspendLayout();
@@ -43,16 +40,6 @@ namespace DXSample {
             // customerInfoBindingSource
             // 
             this.customerInfoBindingSource.DataMember = "CustomerInfo";
-            this.customerInfoBindingSource.DataSource = this.dataSet11;
-            // 
-            // dataSet11
-            // 
-            this.dataSet11.DataSetName = "DataSet1";
-            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // defaultLookAndFeel1
-            // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Money Twins";
             // 
             // gridControl
             // 
@@ -123,7 +110,6 @@ namespace DXSample {
             this.Text = "New Item Row";
             this.Load += new System.EventHandler(this.OnLoad);
             ((System.ComponentModel.ISupportInitialize)(this.customerInfoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             this.ResumeLayout(false);
@@ -134,8 +120,6 @@ namespace DXSample {
 
 
         private System.Windows.Forms.BindingSource customerInfoBindingSource;
-        private DataSet1 dataSet11;
-        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private DevExpress.XtraGrid.GridControl gridControl;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView;
         private DevExpress.XtraGrid.Columns.GridColumn colCustomerID;
