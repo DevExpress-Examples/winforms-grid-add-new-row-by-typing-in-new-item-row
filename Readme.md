@@ -8,6 +8,8 @@
 
 This example demonstrates how to add a new data row to the grid's data source after the user starts typing within the New Item Row (the behavior inspired by the standard `DataGridView`).
 
+![WinForms Data Grid - Add a new row by typing within the New Item Row](https://raw.githubusercontent.com/DevExpress-Examples/winforms-grid-add-new-row-by-typing-in-new-item-row/13.1.4%2B/media/winforms-grid-new-item-row.gif)
+
 Follow the steps below:
 
 1. Set the [GridView.OptionsView.NewItemRowPosition](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridOptionsView.NewItemRowPosition) property to `NewItemRowPosition.Bottom`.
