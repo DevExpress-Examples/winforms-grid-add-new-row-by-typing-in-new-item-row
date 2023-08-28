@@ -11,7 +11,7 @@ This example demonstrates how to add a new data row to the grid's data source af
 Follow the steps below:
 
 1. Set the [GridView.OptionsView.NewItemRowPosition](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Grid.GridOptionsView.NewItemRowPosition) property to `NewItemRowPosition.Bottom`.
-2. Handle the cell editor's `EditValueChanged` event to close the active editor ([GridView.CloseEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.BaseView.CloseEditor)), save a new row to the data source ([GridView.UpdateCurrentRow](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.BaseView.UpdateCurrentRow)), and show/activate the cell's editor ([GridView.ShowEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.BaseView.ShowEditor)).
+2. Handle the cell editor's `EditValueChanged` event to check whether the New Item Row is focused and close the active editor ([GridView.CloseEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.BaseView.CloseEditor)), save a new row to the data source ([GridView.UpdateCurrentRow](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.BaseView.UpdateCurrentRow)), and show/activate the cell's editor ([GridView.ShowEditor](https://docs.devexpress.com/WindowsForms/DevExpress.XtraGrid.Views.Base.BaseView.ShowEditor)).
 
 ```csharp
 private void OnEditValueChanged(object sender, EventArgs e)
