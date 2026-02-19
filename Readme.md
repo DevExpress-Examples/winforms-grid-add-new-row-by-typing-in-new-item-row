@@ -9,7 +9,7 @@
 
 This example demonstrates how to add a new data row to the grid's data source after the user starts typing within the New Item Row (the behavior inspired by the standard `DataGridView`).
 
-![WinForms Data Grid - Add a new row by typing within the New Item Row](https://raw.githubusercontent.com/DevExpress-Examples/winforms-grid-add-new-row-by-typing-in-new-item-row/13.1.4%2B/media/winforms-grid-new-item-row.gif)
+![WinForms Data Grid - Add a new row by typing within the New Item Row](media/winforms-grid-new-item-row.gif)
 
 Follow the steps below:
 
@@ -49,3 +49,4 @@ private void OnLoad(object sender, EventArgs e)
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
